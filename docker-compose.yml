@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  docer:
+    build: .
+    command: tail -f /dev/null
+    env_file:
+      - alfresco.env
+    volumes: 
+      - .:/code
